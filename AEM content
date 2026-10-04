@@ -1,0 +1,141 @@
+1. AEM Architecture
+Study:
+AEM → Apache Sling → JCR
+Author vs Publish instance
+Dispatcher
+OSGi
+CRX/CRXDE
+Oak
+Repository structure
+2. Sling
+Know these clearly:
+Sling Resource
+Resource Resolver
+Resource Type
+Resource Super Type
+Sling URL resolution
+Sling Servlet
+Sling Model
+Adaptable / adaptTo()
+Important:
+resourceType → tells Sling which component/rendering should handle a resource.
+resourceSuperType → allows a component to inherit behavior from another component.
+3. JCR & Oak
+Learn:
+JCR meaning
+Node and property
+jcr:content
+sling:resourceType
+cq:Page
+nt:unstructured
+Oak
+CRX
+Repository hierarchy
+Authoring content vs component definition
+4. AEM Components
+Study:
+Component definition
+cq:dialog
+cq:editConfig
+Core Components
+Foundation Components
+Proxy Components
+Component inheritance
+Component policies
+Component groups
+Allowed components
+5. Templates
+Very important for exams:
+Static Template
+Editable Template
+Template structure
+Initial content
+Structure
+Policies
+Layout container
+Template editor
+6. HTL
+You already know some of this, but add:
+data-sly-use
+data-sly-list
+data-sly-repeat
+data-sly-test
+data-sly-resource
+data-sly-include
+HTL expressions
+Use-API
+Contexts
+Global objects such as properties, resource, currentPage
+7. Sling Models
+Make sure you understand:
+@Model
+@Inject
+@ValueMapValue
+@ChildResource
+@Self
+@SlingObject
+@OSGiService
+@PostConstruct
+Resource vs Request adaptable
+ValueMap
+8. Dialogs & Granite UI
+Study:
+Granite UI
+Coral UI
+Dialog fields
+Tabs
+Multifield
+Composite multifield
+Nested multifield
+field
+name
+resourceType
+composite=true
+Select, checkbox, pathfield, fileupload
+9. AEM Content & Properties
+Understand:
+ValueMap
+Resource
+ResourceResolver
+Child resources
+Properties
+Nodes
+Paths
+getChild()
+getChildren()
+adaptTo()
+10. OSGi
+Study:
+Bundle
+Component
+Service
+Configuration
+Service interface
+@Component
+@Activate
+@Reference
+OSGi lifecycle
+Configuration Manager
+11. Clientlibs
+Know:
+CSS
+JavaScript
+Categories
+Dependencies
+allowProxy
+Clientlib folder structure
+Why clientlibs are used
+12. AEM Cloud / Adobe Ecosystem
+Since your DSE/AEM exam may include theory:
+AEM Sites
+AEM Assets
+AEM Forms
+Adobe Experience Cloud
+AEM as a Cloud Service
+Adobe Experience Manager
+Adobe Experience Platform
+Analytics
+Target
+Campaign
+Experience Fragments
+Content Fragments
