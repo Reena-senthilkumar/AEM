@@ -1,0 +1,87 @@
+AEM Backend — Important Topics
+Sling Models
+@Model
+@Inject
+@ValueMapValue
+@ChildResource
+@OSGiService
+@SlingObject
+Get properties from JCR
+Multifield/nested multifield handling
+JCR & Repository
+Nodes and properties
+Resources
+Resource
+ValueMap
+Node
+ResourceResolver
+JCR paths
+cq:Page, jcr:content
+Apache Sling
+Sling request/resource resolution
+Resource types
+Selectors
+Extensions
+URL → Resource → Component
+sling:resourceType
+sling:resourceSuperType
+OSGi
+OSGi components
+Services
+@Component
+@Service
+@Reference
+OSGi configurations
+Service ranking
+Servlets
+Sling Servlet
+@SlingServletPaths
+@SlingServletResourceTypes
+GET/POST
+doGet() / doPost()
+Request and response objects
+AEM Components
+Core components
+Foundation components
+Custom components
+Proxy components
+Component inheritance
+Dialog → JCR → Sling Model → HTL
+Dialogs & Multifields
+Granite UI
+Coral UI
+cq:dialog
+Simple multifield
+Composite multifield
+Nested multifield
+Datasources
+AEM Queries
+Query Builder
+Predicates
+JCR-SQL2 basics
+XPath basics
+Searching nodes/properties
+Schedulers / Event Handling
+Sling Scheduler
+OSGi scheduler
+Event handlers
+Jobs
+Workflows
+Services & Business Logic
+Service interface
+Service implementation
+Injecting services into Sling Models
+Separating business logic from models
+Maven & Project Structure
+core
+ui.apps
+ui.content
+ui.frontend
+pom.xml
+Dependencies
+AEM project archetype
+Content packages
+Testing
+JUnit
+AEM Mocks
+Unit testing Sling Models/services
