@@ -1,0 +1,77 @@
+AEM MCQ Theory Checklist
+1. AEM Basics ⭐⭐⭐
+What is AEM?
+AEM Sites
+AEM Assets
+AEM Forms
+AEM architecture
+Author instance
+Publish instance
+Dispatcher
+CDN
+AEM as a Cloud Service
+AEM vs CMS
+Adobe Experience Cloud
+Adobe Experience Manager vs Adobe Experience Platform
+2. AEM Architecture ⭐⭐⭐
+Know the purpose of:
+Sling
+OSGi
+JCR
+Oak
+Apache Felix
+CRXDE
+Repository
+Resource
+Node
+Property
+Bundle
+Component
+MCQ trap:
+Sling = request/resource handling
+OSGi = modular Java runtime
+JCR = content repository API
+Oak = JCR implementation
+3. Sling ⭐⭐⭐⭐
+Sling request processing
+Resource
+ResourceResolver
+Resource type
+Resource super type
+Sling servlet
+Sling Model
+Sling URL decomposition
+Selectors
+Extensions
+Suffix
+Remember:
+URL → Sling → Resource → Resource Type → Script/Servlet
+4. JCR / Repository ⭐⭐⭐⭐
+Node
+Property
+Path
+Node types
+jcr:primaryType
+sling:resourceType
+sling:resourceSuperType
+nt:unstructured
+cq:Page
+cq:PageContent
+CRXDE
+Oak
+5. HTL ⭐⭐⭐⭐⭐
+Very important for MCQs.
+HTL purpose
+Expression language
+${}
+data-sly-use
+data-sly-list
+data-sly-repeat
+data-sly-test
+data-sly-resource
+data-sly-include
+data-sly-call
+data-sly-template
+Contexts
+Automatic escaping
+HTL vs JSP
