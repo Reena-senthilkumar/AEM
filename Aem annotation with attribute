@@ -3,3 +3,6 @@ Remember the difference:
 @ValueMapValue → reads a property.
 @ChildResource → accesses a child resource/node.
 The name in @ChildResource is the repository child-node name, not an HTL variable name or Java method name.
+
+@SlingObject
+Meaning: Injects Sling objects such as a ResourceResolver, Resource, or SlingHttpServletRequest.
