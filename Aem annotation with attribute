@@ -6,3 +6,14 @@ The name in @ChildResource is the repository child-node name, not an HTL variabl
 
 @SlingObject
 Meaning: Injects Sling objects such as a ResourceResolver, Resource, or SlingHttpServletRequest.
+
+Run logic after injection @PostConstruct
+Access a request attribute @RequestAttribute
+Read a URL/form parameter @RequestParameter
+Set a default property value @Default
+Register an OSGi component @Component
+Connect an OSGi service @Reference
+Initialize an OSGi component @Activate
+Handle configuration changes @Modified
+Define OSGi configuration @Designate, @ObjectClassDefinition
+Export a Sling Model @Exporter
