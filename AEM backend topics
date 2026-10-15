@@ -85,3 +85,18 @@ Testing
 JUnit
 AEM Mocks
 Unit testing Sling Models/services
+
+Topic
+Simple meaning
+Query Builder
+Searches AEM content
+Event Handler
+Reacts when something happens
+ResourceResolver
+Accesses/navigates AEM resources
+User
+Individual AEM identity
+User Group
+Collection of users
+Run Mode
+Determines environment-specific behavior/configuration
