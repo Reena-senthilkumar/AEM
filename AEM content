@@ -139,3 +139,24 @@ Target
 Campaign
 Experience Fragments
 Content Fragments
+
+Concept
+Remember
+Workflow Model
+Defines a sequence of steps for a business process
+Workflow Step
+Performs one part of the workflow
+Participant
+A user/group involved in a workflow step
+Process Step
+Performs automated processing
+Workflow
+Process-oriented
+Scheduler
+Time-oriented
+Administrator
+Manages AEM/system administration
+User Group
+Groups users for permission management
+Permissions
+Control what users can access/do
