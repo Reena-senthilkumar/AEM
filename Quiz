@@ -1,0 +1,20 @@
+1. Which annotation injects an OSGi service into a Sling Model?
+A) @Inject  B) @OSGiService  C) @Reference  D) @ScriptVariable
+2. What does @PostConstruct do in a Sling Model?
+A) Runs before injection  B) Runs after injection completes  C) Runs on bundle stop  D) Registers the model
+3. Which annotation links a config interface to a component so it shows in Felix configMgr?
+A) @ObjectClassDefinition  B) @AttributeDefinition  C) @Designate  D) @Modified
+4. What is the key of a config property in an @ObjectClassDefinition interface?
+A) The name in @AttributeDefinition  B) The method name  C) The description  D) The interface name
+5. In a factory configuration, what does the part after ~ in the file name represent?
+A) The OSGi version  B) The run mode  C) An instance name  D) The service ranking
+6. Which configurationPolicy creates the component only when a config exists?
+A) OPTIONAL  B) IGNORE  C) REQUIRE  D) MANDATORY
+7. What is the LDAP filter to pick a component named quesone?
+A) component.name=quesone  B) (component.name=quesone)  C) [component.name=quesone]  D) {component.name=quesone}
+8. Which page shows whether your bundle is Active or Installed?
+A) /system/console/bundles  B) /crx/de  C) /sites.html  D) /useradmin
+9. Which logging style is correct?
+A) LOG.info("Path " + path)  B) LOG.info("Path {}", path)  C) System.out.println(path)  D) LOG.info("Path %s", path)
+10. In Dispatcher filters, if two rules match a request, which one applies?
+A) The first  B) The last  C) The most specific  D) Neither, it errors
