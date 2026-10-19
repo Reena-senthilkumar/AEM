@@ -18,3 +18,27 @@ A) /system/console/bundles  B) /crx/de  C) /sites.html  D) /useradmin
 A) LOG.info("Path " + path)  B) LOG.info("Path {}", path)  C) System.out.println(path)  D) LOG.info("Path %s", path)
 10. In Dispatcher filters, if two rules match a request, which one applies?
 A) The first  B) The last  C) The most specific  D) Neither, it errors
+1. Which annotation makes a Java class a Sling Model?
+a) @Component b) @Model c) @Service d) @Designate
+2. Which annotation injects a dialog property into a Sling Model field?
+a) @OSGiService b) @SlingObject c) @ValueMapValue d) @Activate
+3. Which annotation injects an OSGi service into a Sling Model?
+a) @OSGiService b) @Reference c) @Inject d) @Self
+4. What makes a missing dialog value not break the model?
+a) @Optional on the class b) defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL c) @Nullable d) @Default
+5. Which annotation runs a method after all fields are injected?
+a) @Activate b) @PostConstruct c) @Init d) @Model
+6. Which annotation registers a class as an OSGi service?
+a) @Model b) @Designate c) @Component(service = ...) d) @AttributeDefinition
+7. Which annotation runs when the OSGi service activates?
+a) @PostConstruct b) @Activate c) @Start d) @Deactivate
+8. Which annotation links a service to its configuration class?
+a) @Designate(ocd = ...) b) @Model c) @OSGiService d) @Reference
+9. Which attribute type masks the value on the OSGi configuration screen?
+a) AttributeType.STRING b) AttributeType.PASSWORD c) AttributeType.HIDDEN d) AttributeType.SECRET
+10. Which HTL statement binds a Sling Model?
+a) data-sly-model b) data-sly-include c) data-sly-use d) data-sly-call
+11. Which HTL statement loops over a list?
+a) data-sly-repeat b) data-sly-list c) data-sly-test d) data-sly-for
+12. Which HTL statement shows an element only when a condition is true?
+a) data-sly-if b) data-sly-show c) data-sly-test d
