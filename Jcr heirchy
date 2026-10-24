@@ -1,0 +1,22 @@
+myproject/
+│
+├── core/
+│   └── Java code
+│       ├── models
+│       ├── services
+│       ├── servlets
+│       └── schedulers
+│
+├── ui.apps/
+│   └── Components
+│       ├── component.html
+│       ├── _cq_dialog
+│       └── .content.xml
+│
+├── ui.content/
+│   └── Content / pages / configurations
+│
+├── ui.frontend/
+│   └── CSS / JavaScript / frontend code
+│
+└── pom.xml
