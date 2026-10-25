@@ -1,0 +1,137 @@
+AEM basics
+Short form
+Full form
+AEM
+Adobe Experience Manager
+CQ
+Communiqué
+JCR
+Java Content Repository
+CRX
+Content Repository Extreme
+Sling
+Apache Sling (not an acronym)
+OSGi
+Open Service Gateway initiative
+HTL
+HTML Template Language
+WCM
+Web Content Management
+DAM
+Digital Asset Management
+UI
+User Interface
+UX
+User Experience
+🔹 Sling / AEM development
+Short form
+Full form
+POJO
+Plain Old Java Object
+WCM POJO
+Web Content Management Plain Old Java Object
+API
+Application Programming Interface
+URL
+Uniform Resource Locator
+URI
+Uniform Resource Identifier
+REST
+Representational State Transfer
+HTTP
+HyperText Transfer Protocol
+HTML
+HyperText Markup Language
+CSS
+Cascading Style Sheets
+JSON
+JavaScript Object Notation
+XML
+Extensible Markup Language
+🔹 OSGi
+Short form
+Full form
+OSGi
+Open Service Gateway initiative
+PID
+Persistent Identifier
+DS
+Declarative Services
+SCR
+Service Component Runtime
+R7 / R8
+OSGi Release 7 / Release 8
+LDAP
+Lightweight Directory Access Protocol
+🔹 AEM components / repository
+Short form
+Full form
+JCR
+Java Content Repository
+CRXDE
+CRX Development Environment
+ACL
+Access Control List
+RBAC
+Role-Based Access Control
+DAM
+Digital Asset Management
+MIME
+Multipurpose Internet Mail Extensions
+UUID
+Universally Unique Identifier
+🔹 AEM Cloud / deployment
+Short form
+Full form
+AEMaaCS
+Adobe Experience Manager as a Cloud Service
+CI/CD
+Continuous Integration / Continuous Delivery
+Maven
+Maven is a build automation/project management tool; not an acronym
+POM
+Project Object Model
+JAR
+Java Archive
+WAR
+Web Application Archive
+OSGi bundle
+Java package deployed into the OSGi framework
+🔹 Servlets / backend
+Short form
+Full form
+HTTP
+HyperText Transfer Protocol
+GET
+GET request method
+POST
+POST request method
+PUT
+PUT request method
+DELETE
+DELETE request method
+CRUD
+Create, Read, Update, Delete
+JSON
+JavaScript Object Notation
+🔹 Common Java terms you see in AEM
+Short form
+Full form
+JVM
+Java Virtual Machine
+JDK
+Java Development Kit
+JRE
+Java Runtime Environment
+OOP
+Object-Oriented Programming
+POJO
+Plain Old Java Object
+IDE
+Integrated Development Environment
+DTO
+Data Transfer Object
+DAO
+Data Access Object
+API
+Application Programming Interface
