@@ -1,0 +1,120 @@
+📚 AEM Learning — Servlet & ResourceResolver
+
+📅 Day 26 — AEM Practice
+
+Today I learned about AEM Servlets, ResourceResolver, Services, and System Users.
+
+🔹 1. What is a Servlet?
+
+A Servlet is used to handle an HTTP request in AEM and generate a response.
+
+Example:
+
+Browser
+   ↓
+/reen/hello
+   ↓
+Sling Servlet
+   ↓
+Java Logic
+   ↓
+Response
+
+🔹 2. Types of AEM Servlets
+
+There are mainly two common ways to register a servlet:
+
+- Resource Type Servlet
+- Path Servlet
+
+Resource Type:
+
+@Component(
+    service = Servlet.class,
+    property = {
+        "sling.servlet.resourceTypes=laptop/components/hello",
+        "sling.servlet.methods=GET"
+    }
+)
+
+Path:
+
+"sling.servlet.paths=/reen/hello"
+
+🔹 3. ResourceResolver
+
+"ResourceResolver" is used to access resources inside the AEM repository.
+
+It can be used to:
+
+- Get a resource
+- Read properties
+- Navigate child resources
+- Access repository content
+
+Example:
+
+Resource resource = resourceResolver.getResource("/content/laptop");
+
+🔹 4. ResourceResolver vs Resource
+
+ResourceResolver → helps us access/search repository resources.
+
+Resource → represents a particular resource/node-like item in AEM.
+
+ResourceResolver
+       ↓
+/content/laptop
+       ↓
+Resource
+       ↓
+Properties
+
+🔹 5. System User
+
+I also learned why a system user is created.
+
+A system user is a non-human AEM user used by backend code to access repository resources securely.
+
+Example:
+
+laptop-systemuser
+       ↓
+Permissions
+       ↓
+/content/laptop
+       ↓
+AEM Service
+       ↓
+ResourceResolver
+
+The important idea is:
+
+«We should not give backend code unnecessary administrator access. Instead, we give a system user only the permissions it needs.»
+
+🧠 What I understood today
+
+- Servlet handles requests.
+- ResourceResolver accesses repository resources.
+- Resource represents a particular repository resource.
+- Services contain reusable backend logic.
+- System users provide controlled repository access.
+- Permissions/ACLs decide what a system user can access.
+
+💻 Practical Work
+
+Today I practiced:
+
+- Creating an AEM Servlet
+- Understanding resource type and path servlet
+- Working with ResourceResolver
+- Creating a system user
+- Giving permissions to the system user
+- Understanding how backend code accesses AEM content
+
+🚀 Learning Status
+
+AEM Backend: 🔄 Learning
+Servlet: ✅ Practiced
+ResourceResolver: ✅ Practiced
+System User: ✅ Understood
