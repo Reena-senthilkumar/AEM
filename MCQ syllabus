@@ -1,0 +1,196 @@
+Absolutely. If your goal is full marks in AEM MCQs, we should study this as an exam-oriented MCQ syllabus, not as a general AEM tutorial.
+
+I’ll cover the topics you listed in a structured way, including definition → purpose → annotations/configuration → differences → common traps → MCQs.
+
+🎯 Your AEM MCQ syllabus
+
+1. WCM POJO
+2. Sling Models
+3. Child Resource / Nested Sling Models
+4. Ranking & Filtering
+5. Injecting one service into another
+6. OSGi Configuration (@ObjectClassDefinition, @AttributeDefinition, @Designate, etc.)
+7. OSGi Factory Configuration
+8. Logger / Logging
+9. Scheduler
+10. Servlets
+
+- Resource Type servlet
+- Path servlet
+- Selectors
+- Extensions
+- Methods
+- @SlingServletResourceTypes
+
+11. Query Builder
+12. Event Handler
+13. ResourceResolver
+14. User Administration
+15. System Users & Service Users
+16. Run Modes
+17. AEM Administration
+18. Frontend in AEM
+
+- Clientlibs
+- CSS
+- JavaScript
+- ui.frontend
+- categories
+- dependencies
+- embed
+
+19. CRX / JCR
+
+- Nodes
+- Properties
+- Resources
+- ResourceResolver
+- Repository
+- CRXDE
+- /content
+- /apps
+- /libs
+- /conf
+- /var
+
+🔥 How I'll prepare you
+
+For each topic, we'll use this pattern:
+
+1. Learn the concept simply
+↓
+2. Memorize important keywords/annotations
+↓
+3. Learn the differences that MCQs commonly ask
+↓
+4. Identify common traps
+↓
+5. Practice MCQs
+↓
+6. Mixed exam test
+
+For example, for Sling Models, you need to be able to immediately recognize questions like:
+
+> Which annotation is used to inject a child resource?
+
+
+
+Answer: @ChildResource
+
+> Which annotation injects a property from the resource's ValueMap?
+
+
+
+Answer: @ValueMapValue
+
+> Which annotation is used to adapt a Sling Model?
+
+
+
+Answer: @Model
+
+> What does adaptables define?
+
+
+
+Answer: The object from which the model can be adapted, such as Resource or SlingHttpServletRequest.
+
+These are the kinds of questions we'll drill repeatedly.
+
+
+---
+
+🧠 Most important areas for your exam
+
+Based on what you've been studying recently, I would give extra attention to:
+
+Sling Model → OSGi → Servlet → ResourceResolver → Service User → Scheduler → Query Builder → Event Handler → CRX/JCR → Frontend
+
+And especially the confusing pairs:
+
+Don't confuse	Remember
+
+@ValueMapValue vs @Inject	Property injection vs generic injection
+@ChildResource vs @ValueMapValue	Child resource vs property
+Resource vs Node	Sling abstraction vs JCR API
+ResourceResolver vs Session	Sling API vs JCR API
+Resource Type Servlet vs Path Servlet	Resource-based vs URL-path-based
+Scheduler vs Job	Scheduled execution vs persisted/asynchronous job
+Service User vs Admin User	Limited permissions vs administrative access
+Run Mode vs OSGi Config	Environment selection vs configuration
+Factory Config vs normal Config	Multiple configurations vs one configuration
+Event Handler vs Scheduler	React to event vs execute at time/interval
+Query Builder vs Resource API	Searching content vs navigating/accessing resources
+/apps vs /libs	Project/application code vs product/libs
+/content vs /conf	Website/content vs configuration
+
+
+
+---
+
+📚 Study order
+
+Don't study randomly. Follow this order:
+
+Day 1
+
+- CRX/JCR
+- Resource
+- Node
+- ResourceResolver
+- User/Admin
+- Service User
+
+Day 2
+
+- Sling Models
+- WCM POJO
+- ChildResource
+- Injection
+- Ranking
+- Filtering
+
+Day 3
+
+- OSGi
+- Configuration
+- Factory
+- Service-to-service injection
+- Logger
+
+Day 4
+
+- Servlet
+- Resource Type
+- Path
+- Selectors
+- Extensions
+
+Day 5
+
+- Scheduler
+- Query Builder
+- Event Handler
+
+Day 6
+
+- Run Modes
+- AEM Administration
+- Frontend
+- Clientlibs
+- ui.frontend
+
+Day 7
+
+- Full AEM MCQ mock test
+- Mixed questions
+- Weak-topic revision
+- Final rapid-fire test
+
+And I won't just give easy questions. We'll progressively go:
+
+Easy → Medium → Tricky → Interview-level → Exam-level traps → Full mock
+
+Your target should be 90–100% repeatedly, not just getting questions correct once.
+
+If you want, we can start right now with Topic 1: WCM POJO + Sling Model, and I'll teach the important MCQ points first and then give you a 20-question exam-style quiz without answers initially.
