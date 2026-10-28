@@ -1,0 +1,68 @@
+AEM Learning Notes – Day 28
+
+Topic: Resource Resolver in Adobe Experience Manager (AEM)
+
+1. What is Resource Resolver?
+
+"ResourceResolver" is an API in AEM that helps Java code access resources stored in the AEM repository.
+
+Simple example: In my Campus Food Ordering System, I may need to access food court or menu data stored in AEM. A ResourceResolver can help me retrieve those resources.
+
+2. Important Methods
+
+Method| Purpose
+"getResource()"| Retrieves a resource using its path
+"resolve()"| Resolves a request URL into a resource
+"map()"| Maps a resource path to a URL
+"create()"| Creates a resource
+"delete()"| Deletes a resource
+"commit()"| Saves pending changes
+"revert()"| Discards pending changes
+
+3. How to Get a ResourceResolver
+
+From the current request:
+
+ResourceResolver resolver =
+    request.getResourceResolver();
+
+Using "ResourceResolverFactory" for service-level access:
+
+@Reference
+private ResourceResolverFactory resolverFactory;
+
+The factory can provide a service resolver using an appropriately configured service user and subservice.
+
+4. ResourceResolver vs Resource
+
+- ResourceResolver: Helps locate and access resources.
+- Resource: Represents a particular resource, such as a component or content node.
+
+Example:
+
+Resource resource =
+    resolver.getResource("/content/mysite");
+
+5. Important Best Practices
+
+- Check for "null" when retrieving resources.
+- Use the correct permissions for repository access.
+- Close a resolver obtained from the factory when you finish using it.
+- Use the request's resolver for request-based access when appropriate.
+- Call "commit()" when changes need to be persisted.
+
+6. Interview Questions
+
+1. What is a ResourceResolver in AEM?
+2. What is the difference between "getResource()" and "resolve()"?
+3. What is the difference between Resource and ResourceResolver?
+4. Why do we use ResourceResolverFactory?
+5. Why should a service ResourceResolver be closed?
+6. What is the purpose of "commit()" and "revert()"?
+7. What happens if "getResource()" cannot find a resource?
+
+7. What I Learned Today
+
+Today, I learned how ResourceResolver helps Java code access AEM resources, the difference between Resource and ResourceResolver, and the purpose of its important methods.
+
+Next topic: ResourceResolverFactory and System Users in AEM.
