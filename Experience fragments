@@ -1,0 +1,80 @@
+AEM Daily Learning – October 29, 2026
+
+📚 Topics Revised
+
+1. Experience Fragments (XF)
+2. OSGi Configuration and Run Modes
+3. Maven Build and Deployment
+4. Servlet and Resource Resolver
+5. User Administration and Permissions
+
+1. Experience Fragments
+
+An Experience Fragment (XF) is a group of components that can be reused across different pages.
+
+- It can contain text, images, buttons, and other components.
+- It can be reused on multiple pages.
+- An XF can contain another XF when the implementation and configuration support it.
+
+Example: A common header containing a logo, navigation links, and a promotional banner.
+
+2. OSGi Configuration
+
+OSGi manages AEM services, components, and their configurations.
+
+- "ui.config" stores project configuration files.
+- ".cfg.json" files define configuration properties.
+- PID stands for Persistent Identity and identifies an OSGi configuration target.
+
+Example: Configure a scheduler to run with different settings in development and production.
+
+3. Run Modes
+
+Run modes determine which configurations apply to an AEM instance.
+
+Examples:
+
+- "config.author"
+- "config.publish"
+- "config.author.dev"
+- "config.publish.prod"
+
+The most specific matching configuration is selected for a given PID.
+
+4. Maven Build and Deployment
+
+Command:
+
+"mvn clean install -PautoInstallBundle"
+
+- "clean" removes previous build output.
+- "install" builds the project and installs the artifact in the local Maven repository.
+- "-PautoInstallBundle" activates the configured Maven profile to install the bundle into the local AEM instance.
+
+5. Servlet and Resource Resolver
+
+Servlet: Handles HTTP requests and generates responses.
+
+Resource Resolver: Helps access repository resources using paths and the appropriate permissions.
+
+Example: A servlet receives a request to "/bin/hello" and returns a response. A Resource Resolver can retrieve content from a path such as "/content/mysite".
+
+6. User Administration
+
+A service user is a dedicated repository identity used by application code to access resources with specific permissions.
+
+Example: "laptop-systemuser"
+
+Why use it?
+
+- To access required repository paths.
+- To follow the principle of least privilege.
+- To avoid using an administrator account for routine service operations.
+
+🎯 Today's Learning Outcome
+
+I revised AEM reusable content, OSGi configuration, run modes, Maven deployment, servlet requests, resource access, and service-user permissions.
+
+🔗 Reference
+
+Adobe Experience Manager documentation: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi
