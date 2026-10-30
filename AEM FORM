@@ -1,0 +1,63 @@
+AEM Daily Learning – October 30, 2026
+
+📚 Topic: AEM Forms
+
+1. What is AEM Forms?
+
+AEM Forms is an Adobe Experience Manager feature used to create digital forms that allow users to enter, submit, and process information.
+
+Example: A student registration form that collects a name, email address, and phone number.
+
+2. Types of Forms in AEM
+
+1. PDF Forms
+
+- Forms created as PDF documents.
+- Users can fill in form fields and submit or save the document, depending on its configuration.
+- Example: An application form downloaded as a PDF.
+
+2. HTML Forms
+
+- Forms displayed in a web browser.
+- Created using HTML form elements such as input fields, buttons, and dropdowns.
+- Example: A contact form on a website.
+
+3. Adaptive Forms
+
+- Forms designed to adapt their layout to different screen sizes.
+- Support features such as field validation, conditional visibility, and dynamic form behaviour.
+- Example: An online loan application that displays additional questions based on the user's answers.
+
+3. Difference Between the Three
+
+Feature| PDF Form| HTML Form| Adaptive Form
+Format| PDF document| Web page| Responsive digital form
+Main use| Document-based forms| Website data collection| Interactive form workflows
+Screen adaptation| Depends on PDF viewer| Depends on web design| Supports responsive layouts
+Example| Application PDF| Contact form| Loan application
+
+4. Advantages of AEM Forms
+
+- Reduces paperwork.
+- Collects user information digitally.
+- Supports form validation.
+- Improves the user experience.
+- Can integrate with backend systems and workflows when configured.
+
+5. Real-Time Example
+
+Consider a college admission application.
+
+1. The student opens the form.
+2. Enters personal and educational details.
+3. The form validates the information.
+4. The student submits the form.
+5. The application processes and stores the data through the configured backend.
+
+🎯 Key Takeaway
+
+PDF forms are document-based, HTML forms are web-based, and Adaptive Forms provide responsive, interactive form experiences.
+
+🔗 Reference
+
+Adobe Experience League: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/home
