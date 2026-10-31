@@ -1,0 +1,37 @@
+📘 AEM Learning Notes – Day 31
+
+AEM Forms: PDF Form, HTML Form & Adaptive Form
+
+Today, I learned about the three types of forms used in Adobe Experience Manager (AEM).
+
+1. PDF Form
+
+- Used to collect information through a PDF document.
+- Users can fill in fields such as name, email, and address.
+- Useful for printable forms and document-based workflows.
+
+2. HTML Form
+
+- A form created using HTML elements such as "<form>", "<input>", and "<button>".
+- Used to collect user input directly on a website.
+- Example: Login form, registration form, and contact form.
+
+3. Adaptive Form
+
+- An AEM form designed to adapt its layout to different screen sizes.
+- Supports form fields, validation, conditional visibility, and submission workflows.
+- Example: Online application form, customer registration, and service request form.
+
+🔍 Key Differences
+
+Feature| PDF Form| HTML Form| Adaptive Form
+Format| PDF document| Web page| AEM form experience
+Responsive layout| Limited| Depends on design| Supported
+Validation| Depends on PDF tools| HTML/JavaScript| Configurable form rules
+Main use| Documents| Website input| Interactive data collection
+
+💡 What I Learned
+
+Each form serves a different purpose. The right choice depends on how users interact with the form and how the collected information needs to be processed.
+
+#AdobeExperienceManager #AEM #AEMForms #LearningInPublic #Java #WebDevelopment
