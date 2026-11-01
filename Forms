@@ -1,0 +1,79 @@
+AEM Forms – PDF Forms, HTML Forms & Adaptive Forms
+
+1. What is AEM Forms?
+
+Adobe Experience Manager (AEM) Forms is used to create, manage, publish, and process digital forms. It helps collect user information and integrate form submissions with backend systems.
+
+2. Types of AEM Forms
+
+1. PDF Forms
+
+- PDF stands for Portable Document Format.
+- Used to collect information through fillable PDF documents.
+- Users can fill out supported PDF forms and save them locally.
+- Useful for applications, agreements, and official documents.
+- Interactive PDF forms can support digital signatures.
+
+Example: A student downloads a college admission PDF, fills in personal details, and submits it.
+
+2. HTML Forms
+
+- HTML stands for HyperText Markup Language.
+- Forms are displayed in a web browser.
+- Users can access them through a website on desktop or mobile devices.
+- Useful for browser-based data collection.
+
+Example: A student enters their name, email, and department in an online registration form.
+
+3. Adaptive Forms
+
+- Adaptive Forms are responsive and dynamic forms.
+- They adjust their layout to different screen sizes.
+- They can show or hide fields based on user input.
+- They support validation and configurable submission actions.
+- They can integrate with backend services and data sources.
+
+Example: When a user selects “Other” as their department, an additional text field appears to enter the department name.
+
+3. Comparison
+
+Feature| PDF Form| HTML Form| Adaptive Form
+Format| PDF document| Browser-based HTML| Responsive web form
+Offline use| Possible, depending on form| Usually requires a website| Usually requires a website
+Responsive layout| Limited| Depends on implementation| Built for adaptive layouts
+Dynamic fields| Supported in some PDF forms| Possible with development| Supported through rules and configuration
+Example| Application document| Registration page| Dynamic online application
+
+4. Real-Time Use Cases
+
+- PDF Forms: Agreements, printable applications, official records.
+- HTML Forms: Contact forms, feedback forms, simple registration pages.
+- Adaptive Forms: Loan applications, insurance claims, employee onboarding, and online applications.
+
+5. Important Viva Questions
+
+Q1. What is AEM Forms?
+
+AEM Forms is an Adobe solution for creating, managing, publishing, and processing digital forms.
+
+Q2. What is the difference between PDF Forms and Adaptive Forms?
+
+PDF Forms are document-based, whereas Adaptive Forms are responsive web forms that can dynamically change according to user input.
+
+Q3. Why are Adaptive Forms useful?
+
+They provide responsive layouts, validation, conditional fields, and configurable submission actions.
+
+Q4. Can HTML Forms work on mobile devices?
+
+Yes. HTML Forms can be accessed on mobile devices, and their responsiveness depends on the implementation.
+
+Q5. Can Adaptive Forms connect to a database?
+
+Yes. They can integrate with configured data sources through a Form Data Model or other supported integration methods.
+
+Conclusion
+
+AEM Forms provides different ways to collect information. PDF Forms are useful for document-based workflows, HTML Forms are useful for browser-based data collection, and Adaptive Forms are useful for responsive, dynamic digital experiences.
+
+Reference: "Adobe Experience Manager Forms – Official Documentation" (https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms)
