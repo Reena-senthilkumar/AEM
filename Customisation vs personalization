@@ -1,0 +1,71 @@
+📘 AEM Notes – Day 3
+
+Customization vs Personalization in Adobe Experience Manager (AEM)
+
+1. Customization
+
+Customization means modifying a website or application according to specific business requirements.
+
+Example in AEM:
+
+- Creating a custom component for a food ordering website.
+- Changing the layout of a menu page.
+- Adding custom CSS and HTL to display food items.
+
+2. Personalization
+
+Personalization means displaying different content to users based on their interests, behavior, profile, or other available information.
+
+Example in AEM:
+
+- Showing vegetarian food recommendations to users interested in vegetarian meals.
+- Displaying offers based on a user's preferences.
+- Showing relevant content to different audience segments.
+
+3. Key Differences
+
+Customization| Personalization
+Changes the website to meet requirements.| Adapts content to different users.
+Often applies to a component or experience.| Depends on user attributes, behavior, or segments.
+Example: Custom food card component.| Example: Recommended food based on preferences.
+
+4. AEM as a Cloud Service
+
+AEM as a Cloud Service is Adobe's cloud-native content management solution. It helps teams create, manage, and deliver digital experiences using a continuously updated cloud platform.
+
+Key benefits:
+
+- Automatic updates
+- Cloud scalability
+- Improved development and deployment workflows
+- Integration with Adobe Experience Cloud services
+
+5. Four Guiding Principles
+
+When learning AEM as a Cloud Service, remember these general principles:
+
+1. Cloud-native: Designed to operate in a cloud environment.
+2. Always current: Uses Adobe-managed updates.
+3. Scalable: Resources can adapt to changing demands.
+4. Automated operations: Reduces manual infrastructure management.
+
+Note: These are general learning principles, not an official four-item list defined by Adobe.
+
+6. Quick Revision
+
+- Customization: Modify the experience to meet requirements.
+- Personalization: Adapt the experience to the individual user.
+- AEM: Adobe Experience Manager.
+- AEMaaCS: Adobe Experience Manager as a Cloud Service.
+- HTL: HTML Template Language.
+
+Viva Question
+
+Q: What is the difference between customization and personalization in AEM?
+
+Answer: Customization modifies a website or component to meet business requirements, whereas personalization delivers relevant content to users based on their preferences, behavior, or audience segment.
+
+---
+
+📌 Learning consistently, one AEM concept at a time!
+#AdobeExperienceManager #AEM #AEMaaCS #Java #LearningJourney
