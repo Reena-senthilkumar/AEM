@@ -1,0 +1,80 @@
+📘 AEM Forms: AcroForms vs XFA Forms
+
+Date: 04 November 2026
+
+1. What is AEM Forms?
+
+Adobe Experience Manager (AEM) Forms is used to create, manage, publish, and process digital forms.
+
+Example: A student registration form containing student name, email, and department.
+
+2. What is an AcroForm?
+
+AcroForm is a type of interactive PDF form that uses standard PDF form fields.
+
+Features:
+
+- Created using PDF form tools such as Adobe Acrobat.
+- Supports text fields, checkboxes, radio buttons, and dropdowns.
+- Allows users to fill in information directly in a PDF.
+
+Example: A PDF application form with fields for name, address, and phone number.
+
+3. What is an XFA Form?
+
+XFA stands for XML Forms Architecture. It is a form technology that uses XML-based templates to define form structure, layout, and behavior.
+
+Features:
+
+- Supports dynamic form layouts.
+- Can expand or repeat sections based on user input.
+- Supports form rules, calculations, and validations.
+- Can be created using Adobe Experience Manager Forms Designer.
+
+Example: An application form that adds additional family-member fields when the user clicks “Add Member.”
+
+4. Difference between AcroForms and XFA Forms
+
+Feature| AcroForm| XFA Form
+Full form| Acrobat Forms| XML Forms Architecture
+Technology| Standard PDF form fields| XML-based form templates
+Layout| Generally fixed| Can be dynamic
+Data| PDF form fields| XML-based data and templates
+Common use| Simple PDF forms| Complex, dynamic forms
+Example| Job application PDF| Dynamic insurance application
+
+5. How are they used in AEM Forms?
+
+1. Create or obtain the PDF form or XFA template.
+2. Import the supported form asset into AEM Forms.
+3. Preview and manage the form.
+4. Publish or use it in a supported form workflow.
+5. Collect and process submitted data.
+
+6. Interview Questions
+
+Q1. What is the main difference between AcroForms and XFA Forms?
+
+AcroForms use standard PDF form fields, whereas XFA uses XML-based templates and supports more dynamic form behavior.
+
+Q2. What is the full form of XFA?
+
+XML Forms Architecture.
+
+Q3. Can XFA forms support dynamic layouts?
+
+Yes, XFA forms can support dynamic layouts when configured and rendered in a compatible environment.
+
+Q4. Can AEM Forms manage both types?
+
+Yes, AEM Forms supports managing AcroForm PDF forms and XFA-based forms, subject to the relevant AEM version and configuration.
+
+Q5. What is an Adaptive Form?
+
+An Adaptive Form is a responsive digital form that can adjust its layout and display fields or sections based on user input.
+
+Conclusion
+
+AcroForms are useful for conventional PDF forms, while XFA forms are suited to more complex, dynamic form requirements. AEM Forms provides capabilities to manage and integrate forms into digital business processes.
+
+Reference: Adobe Experience Manager Forms documentation — https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms
