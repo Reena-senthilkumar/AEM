@@ -1,0 +1,89 @@
+Here’s your GitHub content for today (5 November 2026), continuing your AEM learning journey. You can add this to your `Reena-Campus-Prep-Hub` repository as today's notes.
+
+### Today's GitHub Notes — AEM Assets
+
+Topic: Metadata, Properties, Collections & Renditions
+
+### 1\. Metadata in AEM Assets
+
+Definition: Metadata is information that describes a digital asset, such as an image, video or PDF. It helps users search, identify and organize assets. Adobe Experience Manager
+
+Example: For a campus food ordering website, a food image may have:
+
+* Title: Chicken Burger
+
+* Description: Burger with cheese
+
+* Format: JPEG
+
+* Tags: Food, Burger
+
+* Copyright: Image usage rights
+
+### 2\. Metadata vs Properties
+
+| Metadata                             | Properties                                                             |
+| ------------------------------------ | ---------------------------------------------------------------------- |
+| Information describing an asset      | The interface used to view or edit an asset's information and settings |
+| Includes title, tags and description | Can display metadata and other asset details                           |
+| Helps with searching and organizing  | Helps users inspect and modify available fields                        |
+
+Remember: Metadata is the information; Properties is where you can view or edit much of that information in AEM Assets.
+
+### 3\. Collections in AEM Assets
+
+A collection groups related assets without creating duplicate copies of the original files. Assets can come from different folders. Adobe Experience Manager
+
+Types of collections:
+
+* Static collection: You manually add or remove assets.
+
+* Smart collection: Assets are included automatically when they match defined search criteria.
+
+Example: Create a `Food Menu Images` collection for your campus food ordering project.
+
+### 4\. Renditions in AEM Assets
+
+A rendition is a version of an original asset created for a particular purpose, such as a thumbnail or a web-optimized image. Adobe Experience Manager
+
+![Myazu Japanese Restaurant Jeddah | Restaurants / Cafe | Jedd](https://images.openai.com/static-rsc-4/cEuJn5gCfTGAX6Y9xZ-n2uXwNoteJD5cUonmUysgKB3b8uxodCB2bRFGSueFex9nucRpspFk58fvp7uNW_nB2QzR5vHvTShEoTg2mBXxsXbddnlGca4KsOyLBk-hkHcephUX2wgYsLWNPXJTqdYcqmf9BQcC1KsHYdzNRo8ea8Ms7ojZ2LFoIWN8Nj1pDogK?purpose=fullsize)
+
+Static rendition
+
+A version generated and stored beforehand, often when an asset is uploaded or processed.
+
+Example: A 100 × 100 px thumbnail.
+
+![MenuQRFood — Menús QR digitales para tu negocio](https://images.openai.com/static-rsc-4/_Zx3DqBf_IMyAk1bUku5WF-kFcK63x4qHCz_YVMFrD5ynFTzRHQAVdpiO0YJijhEpB9mLpbkH2KcFzMM2JDxERftR8DD3TX39OVNC0nYxea44II8LfsTmwKgpOTAostLJdZsKpfO7CsL64ij3OAYP-gddEhtzpDZu7c7zVg98OY2Xapf2pbCGnDTZCWILfN4?purpose=fullsize)
+
+Dynamic rendition
+
+A customized version generated or delivered on demand using Dynamic Media capabilities.
+
+Example: Cropping the same burger image to fit a website banner.
+
+Note: Dynamic renditions using Dynamic Media require the relevant configuration and licensing.
+
+### 5\. Quick revision
+
+* Metadata → Describes an asset.
+
+* Properties → View or edit asset information and settings.
+
+* Collection → Groups related assets.
+
+* Static collection → Manually maintained.
+
+* Smart collection → Automatically matches search criteria.
+
+* Rendition → A version of an asset.
+
+* Static rendition → Generated and stored beforehand.
+
+* Dynamic rendition → Customized for delivery, such as resizing or cropping.
+
+### Add today's notes to GitHub
+
+Create a Markdown file named `AEM-Assets-Notes.md` and paste these notes into it.
+
+For tomorrow, I can prepare a continuation with AEM Assets interview questions, MCQs and practical examples.
