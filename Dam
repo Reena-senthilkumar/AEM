@@ -1,0 +1,57 @@
+Day 06 – Adobe Experience Manager (AEM) Assets
+
+📌 Topics Covered
+
+1. What is AEM Assets?
+
+AEM Assets is a Digital Asset Management (DAM) solution used to store, manage, organize, and distribute digital assets such as images, videos, documents, and PDFs.
+
+2. Metadata
+
+Metadata is information that describes an asset.
+
+Examples:
+
+- Title
+- Description
+- Created date
+- File format
+- Author
+- Tags
+
+3. Collections
+
+Collections are groups of assets organized together for easy access and management.
+
+Types:
+
+- Static Collections – Manually add and remove assets.
+- Smart Collections – Automatically collect assets based on search criteria.
+
+4. Renditions
+
+Renditions are different versions of an original asset generated for different purposes.
+
+Types:
+
+- Static Renditions – Pre-generated versions of an asset with fixed dimensions or formats.
+- Dynamic Renditions – Generated or delivered based on requested image parameters, such as size and quality.
+
+5. Metadata vs Properties
+
+Metadata| Properties
+Describes an asset| Contains asset configuration and information
+Includes title, tags, description| Includes asset details and repository properties
+Helps in searching and organizing| Helps manage asset information
+
+🎯 Key Takeaways
+
+- AEM Assets helps manage digital content.
+- Metadata makes assets searchable.
+- Collections organize related assets.
+- Renditions provide different versions of assets.
+- Dynamic Media supports dynamic image delivery.
+
+🚀 Learning Progress
+
+Continuously learning Adobe Experience Manager and exploring its real-world applications.
