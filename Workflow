@@ -1,0 +1,12 @@
+Order details are submitted.
+Food court receives the order.
+Staff accepts or rejects it.
+Student receives order status.
+A similar automated approval process can be designed using AEM workflows.
+Note: Your actual food-ordering application would generally implement order processing through its application services, rather than requiring an AEM workflow.
+6. Important AEM Workflow Concepts
+Workflow Launcher: Starts a workflow automatically when configured conditions are met.
+Workflow Participant: User responsible for completing a task.
+Workflow Payload: Data or resource on which the workflow operates.
+Workflow Instance: An individual execution of a workflow.
+Workflow Inbox: Place where users can see and manage assigned tasks.
