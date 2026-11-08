@@ -1,0 +1,190 @@
+
+# Adobe Experience Manager (AEM) – Multi Site Manager (MSM)
+
+## 1. What is MSM?
+
+MSM stands for Multi Site Manager.
+
+It is an AEM feature used to manage multiple websites by reusing and synchronizing content from a common source website.
+
+It helps organizations maintain consistent content across multiple websites, languages, regions, or brands.
+
+### Why do we use MSM?
+
+- Reuse content across multiple websites.
+- Reduce duplicate content creation.
+- Maintain consistency between websites.
+- Manage multiple regional websites.
+- Update common content from a central website.
+
+## 2. Important MSM Concepts
+
+### 1. Blueprint
+
+A Blueprint is the source structure used to create and manage Live Copies.
+
+Example:
+- Main website: www.company.com
+- Regional websites: www.company.com/india
+  and www.company.com/usa
+
+The main website can act as the Blueprint source.
+
+### 2. Live Copy
+
+A Live Copy is a copy of the source website or page that maintains a relationship with its Blueprint.
+
+When the source content changes, the changes can be synchronized to the Live Copy through rollout.
+
+Example:
+
+Source page:
+Welcome to Our Company.
+
+Live Copy:
+Welcome to Our Company.
+
+When the source page is updated and rolled out, the Live Copy can receive the update.
+
+### 3. Rollout
+
+Rollout is the process of synchronizing changes from the Blueprint to its Live Copies.
+
+Example:
+1. Author updates the company logo in the Blueprint.
+2. Author performs a rollout.
+3. The change is propagated to the configured Live Copies.
+
+### 4. Rollout Configuration
+
+Rollout Configuration defines the actions performed during synchronization.
+
+It controls how changes from the source are applied to Live Copies.
+
+Examples of rollout actions:
+- Update content.
+- Update references.
+- Order child pages.
+- Delete content where configured.
+
+## 3. Important MSM Terminology
+
+| Term | Meaning |
+|------|---------|
+| Blueprint | Source website or page |
+| Live Copy | Copy connected to the source |
+| Rollout | Synchronization of source changes |
+| Rollout Configuration | Defines synchronization actions |
+| Inheritance | Relationship with source content |
+| Synchronize | Applies source changes to a Live Copy |
+
+## 4. How MSM Works
+
+1. Create the main website.
+2. Select the source website as the Blueprint.
+3. Create a Live Copy.
+4. Configure rollout settings.
+5. Make changes to the Blueprint.
+6. Perform a rollout.
+7. Changes are synchronized to the Live Copies according to their configuration and inheritance status.
+
+## 5. Inheritance in MSM
+
+Inheritance means that a Live Copy maintains a relationship with its source content.
+
+When inheritance is active, source changes can be synchronized to the Live Copy.
+
+### Cancel Inheritance
+
+Cancel inheritance means breaking the inheritance relationship for a component or page.
+
+Example:
+
+The main website has a common header.
+
+The India website wants a different header.
+
+The author can cancel inheritance for the relevant content and customize it independently.
+
+Important:
+A locally modified component may have its inheritance cancelled or suspended. A rollout does not necessarily overwrite all local changes.
+
+## 6. Rollout vs Synchronize
+
+| Rollout | Synchronize |
+|---------|-------------|
+| Usually initiated from the Blueprint | Initiated from a Live Copy |
+| Propagates changes to Live Copies | Updates the selected Live Copy from its source |
+| Can target multiple Live Copies | Applies to the selected Live Copy |
+
+## 7. Real-Time Example
+
+Consider an international company with three websites:
+
+- Main website
+- India website
+- USA website
+
+The company wants to maintain a common logo, footer, and company information.
+
+Using MSM:
+
+1. Main website acts as the Blueprint.
+2. India and USA websites are created as Live Copies.
+3. Common content is inherited from the source.
+4. The main website is updated.
+5. Rollout synchronizes the configured changes.
+
+Each regional website can also maintain its own localized content.
+
+## 8. MSM in Campus Food Ordering System
+
+Imagine a college with multiple campus food courts.
+
+- Main campus website acts as the source.
+- Campus A and Campus B have their own websites.
+- Common food ordering instructions and college branding can be reused.
+- Campus-specific menus, prices, and pickup information can be customized.
+
+MSM can help manage shared website content.
+
+Note: MSM manages AEM site content. It does not automatically synchronize live food orders, database records, or application business data.
+
+## 9. Important Interview Questions
+
+### Q1. What is MSM in AEM?
+MSM is a feature that helps manage multiple websites by creating and synchronizing content through Live Copies.
+
+### Q2. What is a Blueprint?
+A Blueprint is the source website or page structure used to create and manage Live Copies.
+
+### Q3. What is a Live Copy?
+A Live Copy is a copy of source content that maintains a relationship with the source.
+
+### Q4. What is Rollout?
+Rollout is the process of propagating changes from a Blueprint to its Live Copies.
+
+### Q5. What is Rollout Configuration?
+It defines the synchronization actions performed during rollout.
+
+### Q6. What happens when inheritance is cancelled?
+The selected content can be customized independently and no longer receives normal inherited updates for that relationship.
+
+### Q7. What is the difference between Blueprint and Live Copy?
+Blueprint is the source; Live Copy is the related destination.
+
+## 10. Important Exam Points
+
+- MSM = Multi Site Manager.
+- Blueprint = Source.
+- Live Copy = Related copy.
+- Rollout = Propagation of source changes.
+- Rollout Configuration = Defines synchronization actions.
+- Inheritance = Maintains the source relationship.
+- MSM is useful for managing multiple websites.
+
+## Conclusion
+
+AEM MSM simplifies the management of multiple websites by reusing common content and synchronizing changes through Blueprints and Live Copies.
+
+It reduces duplicate work and helps maintain consistency across websites.
