@@ -1,0 +1,433 @@
+📚 Today's AEM GitHub Notes – 9 November 2026
+
+Today's Topic: AEM Event Handling – Event Handler & Resource Change Listener
+
+Learning level: Intermediate
+Category: AEM Backend Development
+Previous topics: Workflow Models → MSM → Query Builder
+
+Today's topic is important for understanding how AEM components and services respond automatically when an event occurs.
+
+1. What is Event Handling in AEM?
+
+Event Handling is a mechanism used to detect and respond to specific events occurring inside an application.
+
+In Adobe Experience Manager, event handling helps developers execute custom logic when particular activities happen.
+
+Simple example:
+
+Imagine an author updates a page in AEM.
+
+1. Author modifies the page.
+2. A resource change occurs.
+3. A listener detects the change.
+4. The listener executes the required Java logic.
+
+This process is called Event Handling.
+
+2. Why do we use Event Handling?
+
+- To detect content changes automatically.
+- To execute background operations.
+- To trigger notifications.
+- To monitor repository changes.
+- To perform additional operations when an event occurs.
+- To reduce manual intervention.
+
+3. Important Event Handling Components
+
+Component	Purpose
+
+Event	Represents an occurrence or activity
+Event Publisher	Creates and publishes an event
+EventAdmin	Manages OSGi event delivery
+EventHandler	Receives subscribed events
+Event Topic	Identifies the type of event
+ResourceChangeListener	Detects Sling resource changes
+ResourceChange	Contains information about a resource change
+
+
+4. What is EventAdmin?
+
+EventAdmin is an OSGi service that provides a publish-subscribe mechanism for communication between components.
+
+It allows one component to publish an event and another component to receive it.
+
+Two important methods
+
+Method	Description
+
+sendEvent()	Delivers an event synchronously
+postEvent()	Delivers an event asynchronously
+
+
+Difference:
+
+- sendEvent() waits for synchronous event delivery to finish.
+- postEvent() returns without waiting for delivery to finish.
+
+
+
+5. What is EventHandler?
+
+EventHandler is an OSGi interface used to receive events.
+
+A developer implements this interface and registers it with an event topic.
+
+Important method
+
+handleEvent(Event event)
+
+This method is executed when a matching event is delivered to the handler.
+
+Example: EventHandler
+
+@Component(
+    service = EventHandler.class,
+    property = {
+        EventConstants.EVENT_TOPIC + "=com/campus/order/CREATED"
+    }
+)
+public class OrderCreatedEventHandler implements EventHandler {
+
+    private static final Logger LOG =
+        LoggerFactory.getLogger(OrderCreatedEventHandler.class);
+
+    @Override
+    public void handleEvent(Event event) {
+
+        String orderId =
+            (String) event.getProperty("orderId");
+
+        LOG.info("New order created: {}", orderId);
+    }
+}
+
+Explanation:
+
+1. EventHandler.class registers the service.
+2. EVENT_TOPIC specifies which event to receive.
+3. handleEvent() executes when the event arrives.
+4. getProperty() retrieves information from the event.
+
+6. What is an Event Topic?
+
+An Event Topic identifies the type of event.
+
+Example:
+
+com/campus/order/CREATED
+com/campus/order/CANCELLED
+com/campus/order/UPDATED
+
+If an EventHandler subscribes to:
+
+com/campus/order/CREATED
+
+It receives events published using that topic.
+
+7. How to Publish an Event?
+
+A component can publish an event using EventAdmin.
+
+Example:
+
+@Component(service = OrderEventPublisher.class)
+public class OrderEventPublisher {
+
+    @Reference
+    private EventAdmin eventAdmin;
+
+    public void publishOrderCreated(String orderId) {
+
+        Map<String, Object> properties = new HashMap<>();
+
+        properties.put("orderId", orderId);
+
+        Event event = new Event(
+            "com/campus/order/CREATED",
+            properties
+        );
+
+        eventAdmin.postEvent(event);
+    }
+}
+
+Working flow:
+
+OrderEventPublisher
+        |
+        v
+    EventAdmin
+        |
+        v
+   Event Topic
+        |
+        v
+   EventHandler
+        |
+        v
+   handleEvent()
+        |
+        v
+  Execute Java Logic
+
+8. What is ResourceChangeListener?
+
+ResourceChangeListener is a Sling API interface used to detect changes in AEM resources.
+
+It can listen for:
+
+- Resource Added
+- Resource Changed
+- Resource Removed
+
+It is useful when a developer wants to monitor changes under a particular repository path.
+
+Important properties
+
+Property	Purpose
+
+PATHS	Specifies the paths to monitor
+CHANGES	Specifies the change types
+PROPERTY_NAMES_HINT	Provides a hint about property changes of interest
+
+
+The listener implements the onChange() method to receive resource change information. By default, it receives local changes; external changes require implementing ExternalResourceChangeListener as well. 
+
+Example: ResourceChangeListener
+
+@Component(
+    service = ResourceChangeListener.class,
+    property = {
+        ResourceChangeListener.PATHS + "=/content/campus",
+
+        ResourceChangeListener.CHANGES + "=" +
+        ResourceChangeListener.CHANGE_ADDED,
+
+        ResourceChangeListener.CHANGES + "=" +
+        ResourceChangeListener.CHANGE_CHANGED,
+
+        ResourceChangeListener.CHANGES + "=" +
+        ResourceChangeListener.CHANGE_REMOVED
+    }
+)
+public class CampusResourceListener
+        implements ResourceChangeListener {
+
+    private static final Logger LOG =
+        LoggerFactory.getLogger(CampusResourceListener.class);
+
+    @Override
+    public void onChange(List<ResourceChange> changes) {
+
+        for (ResourceChange change : changes) {
+
+            LOG.info("Resource Path: {}", change.getPath());
+
+            LOG.info("Change Type: {}", change.getType());
+        }
+    }
+}
+
+Explanation
+
+- PATHS: Monitors the campus content path.
+- CHANGES: Specifies which changes to detect.
+- onChange(): Executes when matching resource changes are reported.
+- getPath(): Returns the affected resource path.
+- getType(): Returns the change type.
+
+9. EventHandler vs ResourceChangeListener
+
+This is an important interview question.
+
+EventHandler	ResourceChangeListener
+
+OSGi event interface	Sling resource observation interface
+Listens to subscribed event topics	Listens to resource changes
+Uses handleEvent()	Uses onChange()
+Uses EventAdmin for event delivery	Uses Sling resource observation
+Can handle custom application events	Handles resource add/change/remove events
+
+
+Remember:
+
+EventHandler → OSGi Events.
+
+ResourceChangeListener → Sling Resource Changes.
+
+10. Real-Time Example – Campus Food Ordering System
+
+Let's connect this concept with your campus food ordering project.
+
+Imagine a student places an order.
+
+Scenario 1: Order Created
+
+1. Student places an order.
+2. Order service saves the order.
+3. Order service publishes an ORDER_CREATED event.
+4. EventAdmin delivers the event.
+5. EventHandler receives the event.
+6. Additional operations can be triggered, such as logging or notification processing.
+
+Scenario 2: Food Court Content Updated
+
+Suppose an author updates a food court page in AEM.
+
+1. Author updates the page.
+2. ResourceChangeListener detects the resource change.
+3. The listener identifies the affected path.
+4. Custom Java logic can update a content cache or log the change.
+
+Important: These are application-specific implementations. AEM event handling does not automatically process MySQL orders. The application service must publish the order event, and the database remains responsible for storing order information.
+
+11. EventAdmin vs Sling Jobs
+
+An important advanced concept!
+
+EventAdmin is suitable for event notification, but it does not guarantee that an event will be successfully processed.
+
+For important background operations, Sling Jobs are more appropriate.
+
+EventAdmin	Sling Jobs
+
+Event notification mechanism	Background job processing
+Fire-and-forget delivery	Persisted job processing
+No processing guarantee	At-least-once processing guarantee
+Suitable for lightweight event communication	Suitable for important background tasks
+
+
+Example:
+
+- Logging a content update → EventHandler.
+- Processing an important notification job → Sling Jobs.
+
+Sling Jobs provide at-least-once processing, so job consumers should be designed to handle duplicate execution safely. 
+
+12. Important Interview Questions
+
+Q1. What is Event Handling in AEM?
+
+Event Handling detects specific activities and executes custom logic when those events occur.
+
+Q2. What is EventAdmin?
+
+EventAdmin is an OSGi service used for event communication between components.
+
+Q3. What is EventHandler?
+
+EventHandler is an OSGi interface used to receive events.
+
+Q4. What is an Event Topic?
+
+An Event Topic identifies the type of event to which a handler subscribes.
+
+Q5. What is the difference between sendEvent and postEvent?
+
+- sendEvent(): Synchronous delivery.
+- postEvent(): Asynchronous delivery.
+
+Q6. What is ResourceChangeListener?
+
+It is a Sling API interface used to detect resource changes.
+
+Q7. Which method is implemented in EventHandler?
+
+handleEvent(Event event)
+
+Q8. Which method is implemented in ResourceChangeListener?
+
+onChange(List<ResourceChange> changes)
+
+Q9. Can EventAdmin guarantee event processing?
+
+No. EventAdmin does not provide a durable processing guarantee.
+
+Q10. When should we use Sling Jobs?
+
+When an important background operation needs at-least-once processing and retry handling.
+
+13. Important Exam Points
+
+Concept	Remember
+
+EventAdmin	OSGi event management
+EventHandler	Receives events
+Event	Represents an occurrence
+Event Topic	Identifies the event
+sendEvent()	Synchronous
+postEvent()	Asynchronous
+ResourceChangeListener	Monitors resource changes
+PATHS	Specifies monitoring paths
+CHANGES	Specifies change types
+handleEvent()	EventHandler method
+onChange()	ResourceChangeListener method
+Sling Jobs	Background job processing
+
+
+Common mistakes
+
+1. Forgetting to register EventHandler as an OSGi service.
+2. Using an incorrect event topic.
+3. Forgetting the PATHS property in ResourceChangeListener.
+4. Assuming postEvent() waits for event processing.
+5. Performing long-running operations directly inside an event callback.
+6. Assuming EventAdmin guarantees successful processing.
+7. Assuming ResourceChangeListener receives external changes automatically.
+
+
+---
+
+14. Conclusion
+
+Event Handling is an important AEM backend concept.
+
+It helps developers build event-driven applications by detecting events and executing custom logic.
+
+Understanding EventAdmin, EventHandler, ResourceChangeListener and Sling Jobs helps developers implement better event-driven solutions.
+
+
+---
+
+GitHub Commit Details
+
+Item	Details
+
+Main folder	AEM/Event-Handling/
+File name	AEM-Event-Handling.md
+Commit message	Added AEM Event Handling concepts with Java examples
+
+
+GitHub tags:
+
+#AEM #AdobeExperienceManager #EventHandling #EventAdmin #EventHandler #ResourceChangeListener #Java #Sling
+
+Official Documentation
+
+- [Adobe AEM EventAdmin API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/org/osgi/service/event/EventAdmin.html)
+- [Adobe AEM ResourceChangeListener API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/org/apache/sling/api/resource/observation/ResourceChangeListener.html)
+- [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html?utm_source=chatgpt.com)
+
+
+---
+
+Today's Practice Challenge
+
+Try answering these five questions without looking at the notes.
+
+1. What is the difference between EventAdmin and EventHandler?
+2. Which method is used to receive an event?
+3. What is the purpose of the PATHS property?
+4. What is the difference between sendEvent() and postEvent()?
+5. Why do we use Sling Jobs instead of EventAdmin for important background processing?
+
+Next topic: AEM ResourceResolver – ResourceResolverFactory, getResource(), adaptTo(), commit(), close() and Service User Mapping.
+
+Today's target: Understand the difference between EventHandler and ResourceChangeListener, write one Java example, and commit your notes to GitHub.
+
+
+---
+
+Note: I've paused the recurring daily task after completing this run, so future notes will not arrive automatically.
