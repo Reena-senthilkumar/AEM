@@ -1,0 +1,143 @@
+Day 11 – Software Engineering & Cybersecurity Fundamentals
+
+1. Software Development Life Cycle (SDLC)
+
+SDLC stands for Software Development Life Cycle. It is a systematic process used to develop, test, deploy and maintain software.
+
+Phases of SDLC
+
+1. Planning – Define project goals and resources.
+2. Requirement Analysis – Understand customer needs.
+3. Design – Prepare system architecture and database design.
+4. Development – Write the source code.
+5. Testing – Identify and fix bugs.
+6. Deployment – Release software to users.
+7. Maintenance – Update software and fix issues.
+
+2. SDLC Models
+
+Waterfall Model
+
+- Sequential development approach.
+- Each phase must be completed before the next phase begins.
+- Suitable for projects with fixed requirements.
+- Example: Government payroll system.
+
+Spiral Model
+
+- Combines iterative development with risk analysis.
+- Suitable for large, complex and high-risk projects.
+- Customer feedback and risk evaluation happen repeatedly.
+- Example: Banking and aerospace applications.
+
+Agile Model
+
+- Develops software in short iterations.
+- Supports changing requirements.
+- Encourages continuous feedback and collaboration.
+
+3. Software Testing
+
+Software testing is the process of checking software to identify defects and verify that it meets requirements.
+
+Testing Levels
+
+1. Unit Testing – Tests individual components.
+2. Integration Testing – Tests interactions between modules.
+3. System Testing – Tests the complete application.
+4. Acceptance Testing – Verifies whether the software meets customer requirements.
+
+Black Box Testing
+
+- Tests application functionality without knowing internal source code.
+- Focuses on input and output.
+- Example: Testing login functionality with valid and invalid credentials.
+
+White Box Testing
+
+- Tests internal code, logic and execution paths.
+- Requires programming knowledge.
+- Example: Checking if all branches of an if-else condition execute.
+
+Other Testing Types
+
+- Regression Testing – Checks existing features after code changes.
+- Smoke Testing – Checks basic functionality of a new build.
+- Performance Testing – Measures application performance.
+- Security Testing – Identifies security weaknesses.
+
+4. Cybersecurity Fundamentals
+
+Cybersecurity protects systems, networks and data from unauthorized access and attacks.
+
+Cybersecurity Threats
+
+A threat is a potential danger that can harm a system or its data.
+
+Examples:
+
+- Malware
+- Phishing
+- Ransomware
+- Password attacks
+- SQL Injection
+- Denial of Service (DoS)
+
+Authentication
+
+Verifies the identity of a user.
+
+Example: Logging into Gmail using an email ID and password.
+
+Authorization
+
+Determines what an authenticated user is allowed to access.
+
+Example:
+
+- Admin – Add, edit and delete records.
+- Teacher – Update student marks.
+- Student – View marks.
+
+Vulnerability
+
+A weakness or flaw in a system that can be exploited by an attacker.
+
+Examples:
+
+- Weak passwords.
+- Outdated software.
+- Improper input validation.
+- Incorrect security configurations.
+
+5. Lean Software Development
+
+Lean is an approach that focuses on eliminating waste, improving quality and maximizing customer value.
+
+Seven Principles
+
+1. Eliminate Waste.
+2. Build Quality In.
+3. Create Knowledge.
+4. Defer Commitment.
+5. Deliver Fast.
+6. Respect People.
+7. Optimize the Whole.
+
+Example: Avoid unnecessary features, reuse components and continuously improve application quality.
+
+---
+
+Key Takeaways
+
+- SDLC provides a structured software development process.
+- Waterfall follows a sequential approach.
+- Spiral focuses on risk analysis.
+- Black Box tests functionality.
+- White Box tests internal code.
+- Authentication verifies identity.
+- Authorization checks permissions.
+- Vulnerability means a security weakness.
+- Lean focuses on reducing waste and maximizing value.
+
+Learning Focus: Software Engineering | SDLC | Testing | Cybersecurity | Lean Software Development
