@@ -1,0 +1,60 @@
+Day 15 – Agentic AI and AI Agents
+
+1. What is Agentic AI?
+
+Agentic AI refers to artificial intelligence systems that can independently plan, make decisions, and perform tasks to achieve a specific goal with minimal human intervention.
+
+2. What is an AI Agent?
+
+An AI Agent is a system that observes its environment, processes information, makes decisions, and takes actions to complete a task.
+
+3. How Does Agentic AI Work?
+
+1. Perception: Understands the user's request and environment.
+2. Planning: Breaks the goal into smaller tasks.
+3. Decision Making: Chooses the best action.
+4. Execution: Performs the required actions.
+5. Feedback: Checks the result and adjusts its approach.
+
+4. Real-Time Example
+
+Task: Plan a trip.
+
+A traditional AI might suggest destinations and provide information.
+
+An Agentic AI system could:
+
+- Search for available flights.
+- Compare hotel prices.
+- Prepare an itinerary.
+- Organize the travel schedule.
+- Ask for approval before booking.
+
+5. Agentic AI vs Traditional AI
+
+Traditional AI| Agentic AI
+Responds to prompts| Works toward goals
+Mainly generates outputs| Can perform actions
+Usually follows a request| Can plan multiple steps
+Limited autonomy| Greater autonomy
+
+6. Applications
+
+- Healthcare
+- Banking
+- Software development
+- Customer support
+- Travel planning
+- Cybersecurity
+
+7. Key Terms
+
+- Autonomy: Ability to work independently.
+- Proactive: Taking action before being asked.
+- Orchestration: Coordinating multiple tasks or agents.
+- Workflow: A sequence of activities to complete a task.
+- Synergy: Working together to achieve better results.
+
+Conclusion
+
+Agentic AI represents a shift from AI that simply answers questions to AI systems that can plan and execute tasks toward specific goals.
