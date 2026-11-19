@@ -1,0 +1,68 @@
+AEM – Sling Resource Merger
+
+1. What is Sling Resource Merger?
+
+Sling Resource Merger is an AEM feature that allows developers to customize or override existing resources by combining properties from multiple resources.
+
+It helps us avoid modifying the original components.
+
+2. Why do we use it?
+
+- To customize existing AEM components.
+- To avoid changing the original Granite UI components.
+- To reduce code duplication.
+- To maintain upgrade compatibility.
+- To reuse existing dialog fields.
+
+3. Important Properties
+
+1. sling:resourceSuperType
+
+- Used for component inheritance.
+- Allows a custom component to inherit functionality from an existing component.
+
+2. sling:hideProperties
+
+- Hides specific properties from the merged resource.
+
+3. sling:hideResource
+
+- Hides an entire resource.
+
+4. sling:hideChildren
+
+- Hides specific child resources.
+
+5. sling:orderBefore
+
+- Changes the order of child resources.
+
+4. Real-Time Example
+
+Imagine an existing AEM dialog contains:
+
+- Name
+- Email
+- Phone Number
+
+Your project requires only Name and Email.
+
+Instead of modifying the original dialog, you can use Sling Resource Merger to hide the Phone Number field.
+
+5. Advantages
+
+- Reusability
+- Easy customization
+- Less code duplication
+- Better maintainability
+- Upgrade-friendly development
+
+6. Interview Question
+
+Q: What is the main purpose of Sling Resource Merger?
+
+Answer: It allows developers to customize existing resources by merging properties and child resources without directly modifying the original resources.
+
+Conclusion
+
+Sling Resource Merger makes AEM customization easier, cleaner, and more maintainable.
