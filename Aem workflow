@@ -1,0 +1,32 @@
+AEM Workflow
+
+Introduction
+
+AEM Workflow is used to automate business processes such as content creation, review, approval, and publishing.
+
+Workflow Process
+
+1. Content creation
+2. Content review
+3. Content approval
+4. Content publishing
+
+Important Components
+
+- Workflow Model
+- Workflow Instance
+- Participant Step
+- Process Step
+- OR Split
+- AND Split
+- Workflow Launcher
+
+Real-Time Application
+
+A company uses AEM workflows to ensure that website content is reviewed and approved before publishing.
+
+Key Learning
+
+AEM Workflow improves automation, collaboration, content governance, and publishing efficiency.
+
+Learning Area: Adobe Experience Manager (AEM)
