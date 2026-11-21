@@ -1,0 +1,16 @@
+What is AEM Dispatcher?
+Definition: AEM Dispatcher is a caching and load-balancing tool that improves the performance, security and scalability of an AEM website.
+In simple words, Dispatcher acts as a middle layer between users and the AEM Publish instance.
+Real-time example:
+Imagine 1,000 users visiting the same college website.
+Without caching, every request reaches the AEM Publish server.
+With Dispatcher, frequently requested pages are served from the cache.
+This reduces the load on the Publish server and improves response time.
+
+
+2. Main functions of Dispatcher
+Caching: Stores frequently accessed website pages.
+Load Balancing: Distributes requests across multiple Publish instances.
+Filtering: Blocks unwanted or unauthorized requests.
+Security: Helps protect AEM from direct external access.
+Cache Invalidation: Ensures outdated cached content is refreshed.
