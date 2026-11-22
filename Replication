@@ -1,0 +1,10 @@
+Deactivate (Unpublish): Removes or deactivates published content.
+Reverse Replication: Transfers content from Publish back to Author. Used in certain scenarios, such as user-generated content.
+4. What is a Replication Agent?
+A Replication Agent is responsible for transferring content between AEM environments.
+Important agents:
+Agent Purpose
+Default Agent Author → Publish
+Dispatcher Flush Agent Clears Dispatcher cache
+Reverse Replication Agent Publish → Author
+Static Agent Stores static conte
