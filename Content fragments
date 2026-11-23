@@ -1,0 +1,53 @@
+AEM Content Fragments
+
+What is a Content Fragment?
+
+A Content Fragment is a reusable, structured piece of content in Adobe Experience Manager (AEM). It is independent of webpage design and can be reused across multiple channels.
+
+Content Fragment Model
+
+A Content Fragment Model defines the structure and fields of a Content Fragment.
+
+Examples of Data Types
+
+- Single Line Text
+- Multi Line Text
+- Number
+- Boolean
+- Date and Time
+- Enumeration
+- Content Reference
+- Fragment Reference
+
+Content Fragment vs Experience Fragment
+
+Content Fragment| Experience Fragment
+Structured content| Content with layout
+No webpage design| Includes design and components
+Content-focused| Experience-focused
+Reusable across channels| Reusable page experience
+
+Working Process
+
+1. Create a Content Fragment Model.
+2. Define fields and data types.
+3. Enable the model.
+4. Create a Content Fragment.
+5. Add content.
+6. Publish and reuse it.
+
+Advantages
+
+- Content reusability
+- Easy maintenance
+- Multi-channel delivery
+- Reduced duplication
+- Supports headless CMS
+
+Real-Time Example
+
+In an e-commerce application, product details can be stored in a Content Fragment and reused on websites and mobile applications.
+
+Conclusion
+
+Content Fragments help developers and content authors manage structured content independently of webpage presentation.
