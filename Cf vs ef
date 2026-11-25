@@ -1,0 +1,27 @@
+AEM – Content Fragment vs Experience Fragment
+
+Content Fragment (CF)
+
+A Content Fragment is structured and reusable content that is independent of page presentation.
+
+Example: Product name, description, price and specifications.
+
+Experience Fragment (XF)
+
+An Experience Fragment is a group of components combined to create a reusable experience.
+
+Example: Website header, navigation menu and promotional banner.
+
+Key Differences
+
+Content Fragment| Experience Fragment
+Structured content| Group of components
+Content-focused| Experience-focused
+Content Fragment Model| Experience Fragment Template
+Supports headless delivery| Supports reusable page experiences
+
+Key Takeaway
+
+Content Fragments manage reusable content, whereas Experience Fragments manage reusable content experiences.
+
+#AdobeExperienceManager #AEM #ContentFragment #ExperienceFragment #AdobeExperienceCloud #LearningEveryday
