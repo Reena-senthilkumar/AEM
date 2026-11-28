@@ -1,0 +1,108 @@
+Adobe Experience Manager (AEM) – Resource Resolver
+
+1. What is Resource Resolver?
+
+"ResourceResolver" is an interface in Adobe Experience Manager (AEM) used to access and retrieve resources from the JCR repository.
+
+It acts as a bridge between the application and repository resources.
+
+2. Why do we use Resource Resolver?
+
+- To retrieve resources from the JCR repository.
+- To access content using resource paths.
+- To read and modify repository content with appropriate permissions.
+- To access resource properties.
+- To adapt resources into other useful objects.
+
+3. ResourceResolverFactory
+
+"ResourceResolverFactory" is used to create a ResourceResolver.
+
+It provides different methods to obtain a ResourceResolver.
+
+Important methods
+
+Method| Description
+"getResource()"| Retrieves a resource
+"getUserID()"| Returns the user ID
+"getResourceType()"| Gets the resource type
+"getChildren()"| Retrieves child resources
+"listChildren()"| Lists child resources
+"close()"| Closes the resolver
+
+4. Types of Resource Resolver
+
+1. Request Resource Resolver: Obtained from the current Sling request.
+2. Service Resource Resolver: Used for backend operations with configured service-user permissions.
+3. Administrative Resource Resolver: Deprecated and should not be used.
+
+5. Real-Time Example
+
+Consider a Campus Food Ordering System.
+
+Suppose menu details are stored in the AEM repository:
+
+/content/food/menu
+
+Using ResourceResolver, we can retrieve the menu resource and access its properties.
+
+6. Java Implementation
+
+@Reference
+private ResourceResolverFactory resolverFactory;
+
+public void getMenu() throws LoginException {
+
+    Map<String, Object> params = new HashMap<>();
+
+    params.put(
+        ResourceResolverFactory.SUBSERVICE,
+        "food-service"
+    );
+
+    try (ResourceResolver resolver =
+        resolverFactory.getServiceResourceResolver(params)) {
+
+        Resource resource =
+            resolver.getResource("/content/food/menu");
+
+        if (resource != null) {
+            ValueMap properties = resource.getValueMap();
+
+            String title =
+                properties.get("jcr:title", String.class);
+        }
+    }
+}
+
+7. ResourceResolver vs Resource
+
+ResourceResolver| Resource
+Provides access to resources| Represents an individual resource
+Retrieves resources| Reads resource properties
+Can access multiple resources| Represents a particular resource
+
+8. Important Interview Questions
+
+1. What is ResourceResolver?
+2. What is ResourceResolverFactory?
+3. What is the difference between ResourceResolver and Resource?
+4. Why should we close ResourceResolver?
+5. What is a Service User?
+6. What is the difference between "getResource()" and "resolve()"?
+7. What is the purpose of ValueMap?
+
+9. Key Takeaways
+
+- ResourceResolver provides access to repository resources.
+- ResourceResolverFactory creates ResourceResolver instances.
+- Resource represents an individual repository resource.
+- ValueMap helps retrieve resource properties.
+- Always close the ResourceResolver after use.
+- Prefer Service Resource Resolver for backend service operations.
+
+---
+
+Learning Category: AEM Advanced Concepts
+Topic: Resource Resolver
+Technology: Adobe Experience Manager, Sling, JCR, Java
